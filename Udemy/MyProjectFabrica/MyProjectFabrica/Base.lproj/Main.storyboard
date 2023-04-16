@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RQ2-u4-9jd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyProjectFabrica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fábrica de automóviles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9l-Xh-ZEb">
+                                <rect key="frame" x="78.5" y="135" width="257" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biQ-gd-Pd4">
+                                <rect key="frame" x="113" y="272" width="188" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crear coche sencillo">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cocheSencilloAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6C-3j-f78"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp7-WH-ZwP">
+                                <rect key="frame" x="132" y="364" width="150" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crear coche Mazda"/>
+                                <connections>
+                                    <action selector="cocheMazdaAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ECA-9y-0QV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fp7-WH-ZwP" firstAttribute="top" secondItem="biQ-gd-Pd4" secondAttribute="bottom" constant="56" id="72R-28-P2m"/>
+                            <constraint firstItem="biQ-gd-Pd4" firstAttribute="top" secondItem="f9l-Xh-ZEb" secondAttribute="bottom" constant="105" id="Fl2-MV-9Lr"/>
+                            <constraint firstItem="biQ-gd-Pd4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IL1-db-DMe"/>
+                            <constraint firstItem="f9l-Xh-ZEb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="UeA-Tc-IQC"/>
+                            <constraint firstItem="f9l-Xh-ZEb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YY2-K0-zDa"/>
+                            <constraint firstItem="Fp7-WH-ZwP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hQ5-id-4zx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j5c-ok-aVd"/>
+                    <connections>
+                        <outlet property="botonCocheMazda" destination="Fp7-WH-ZwP" id="GxR-d6-3fg"/>
+                        <outlet property="botonCocheSencillo" destination="biQ-gd-Pd4" id="tdv-Or-Vvx"/>
+                        <segue destination="cwL-8m-RXA" kind="show" identifier="segueSegundaPantalla" id="qVY-fZ-Y8B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="124.55357142857142"/>
+        </scene>
+        <!--My Second View Controller-->
+        <scene sceneID="MUs-HD-HLn">
+            <objects>
+                <viewController id="cwL-8m-RXA" customClass="MySecondViewController" customModule="MyProjectFabrica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vA5-BZ-Xiv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="meM-81-urP">
+                                <rect key="frame" x="87" y="162" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PS-Yb-eEU">
+                                <rect key="frame" x="156" y="359" width="101" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Encender"/>
+                                <connections>
+                                    <action selector="encenderAction:" destination="cwL-8m-RXA" eventType="touchUpInside" id="cjX-cm-J5N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhx-96-6IT">
+                                <rect key="frame" x="156" y="433" width="101" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Apagar"/>
+                                <connections>
+                                    <action selector="apagarAction:" destination="cwL-8m-RXA" eventType="touchUpInside" id="kka-OO-nDI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZN-Vv-B0Z">
+                                <rect key="frame" x="156" y="509" width="101" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Acelerar"/>
+                                <connections>
+                                    <action selector="acelerarAction:" destination="cwL-8m-RXA" eventType="touchUpInside" id="VUt-vU-rpf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Información" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFp-HM-hyC">
+                                <rect key="frame" x="20" y="628" width="374" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcH-ze-Tye">
+                                <rect key="frame" x="97" y="92" width="222" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mostrar información"/>
+                                <connections>
+                                    <action selector="infoAction:" destination="cwL-8m-RXA" eventType="touchUpInside" id="wgj-jC-A0d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1YZ-5o-INQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7UY-c6-Pru"/>
+                    <connections>
+                        <outlet property="botonAcelerar" destination="VZN-Vv-B0Z" id="Bep-x6-JIz"/>
+                        <outlet property="botonApagar" destination="yhx-96-6IT" id="y7l-lP-m63"/>
+                        <outlet property="botonEncender" destination="9PS-Yb-eEU" id="oFn-xG-fXD"/>
+                        <outlet property="botonInfo" destination="WcH-ze-Tye" id="0we-TP-h0t"/>
+                        <outlet property="imagen" destination="meM-81-urP" id="LgS-Fd-FUA"/>
+                        <outlet property="infoLabel" destination="bFp-HM-hyC" id="x42-Sy-2b6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ow-TJ-GRo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875.3623188405797" y="124.55357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KFy-si-O29">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RQ2-u4-9jd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FCi-Jz-mix">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="msq-ME-YRE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8V4-if-wqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='Sección 3 las bases'/>
+        <page name='Sección 4 strings'/>
+        <page name='Sección 5 colecciones'/>
+        <page name='Sección 5 estructuras de control'/>
+        <page name='Sección 5 bucles o ciclos'/>
+        <page name='Sección 6 funciones'/>
+        <page name='Sección 7 Orientada a objetos'/>
+        <page name='Sección 8 Opcionales y errores'/>
+        <page name='Sección 8 Type casting'/>
+        <page name='Sección 8 Extensiones y protocolos'/>
+        <page name='Sección 8 Generics'/>
+        <page name='Sección 8 ARC'/>
+        <page name='Sección 9 Colecciones avanzadas'/>
+    </pages>
+</playground>
